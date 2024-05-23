@@ -9,20 +9,41 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
-    <title>Vite App</title>
+    <title>Jerry's Website</title>
   </head>
   <body>
     <header class="flex justify-between p-4 sticky top-0 bg-white">
-      <h1 class="text-3xl">JerryTheDev</h1>
-      <nav class="flex gap-5 text-xl">
+      <h1 class="text-3xl">Jerry.Dev</h1>
+      <nav class="gap-5 text-xl hidden lg:flex">
         <a href="" class="hover:text-cyan-600">Home</a>
         <a href="" class="hover:text-cyan-600">Skills</a>
         <a href="" class="hover:text-cyan-600">Experiences</a>
         <a href="" class="hover:text-cyan-600">Contact</a>
       </nav>
+      <label for="isOpen" class="lg:hidden">
+        <input type="checkbox" class="peer hidden" id="isOpen" />
+        <img
+          class="max-w-10 peer-checked:hidden relative z-10"
+          src="./assets/more.png"
+          alt=""
+        />
+        <img
+          class="max-w-10 hidden peer-checked:block relative z-10"
+          src="./assets/x-mark.png"
+          alt=""
+        />
+        <nav
+          class="gap-5 text-xl absolute flex-col top-1 right-1 p-24 items-center border-black border-2 bg-white peer-checked:flex hidden"
+        >
+          <a href="" class="hover:text-cyan-600">Home</a>
+          <a href="" class="hover:text-cyan-600">Skills</a>
+          <a href="" class="hover:text-cyan-600">Experiences</a>
+          <a href="" class="hover:text-cyan-600">Contact</a>
+        </nav>
+      </label>
     </header>
     <main>
-      <section class="py-10 grid grid-cols-2 gap-10">
+      <section class="py-10 grid md:grid-cols-2 gap-10">
         <div class="flex justify-center">
           <img
             class="max-w-96 w-full p-5 h-fit rounded-full"
@@ -31,18 +52,91 @@
           />
         </div>
         <div class="px-10">
-          <h2 class="text-6xl mb-6">Hi, I am <br />Ajala Jeremiah</h2>
-          <p class="text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-            rerum unde? Vero quibusdam illo, saepe unde atque porro pariatur
-            rerum reiciendis, soluta, quam eaque repudiandae illum. Architecto
-            quaerat reiciendis harum?
+          <h2 class="text-6xl mb-6 md:text-left text-center">
+            Hi, I am <br />Ajala Jeremiah
+          </h2>
+          <p class="text-lg md:text-left text-center">
+            I am a passionate tech enthusiastic person that loves to learn and
+            grow in the tech industry by learning and implementing globally
+            recognized technologies that help shape our daily life, I have good
+            communication and teamwork skills And also I am a leader who is
+            passionate about helping people Aside from tech , I am also a very
+            active sports person, I love football
           </p>
+          <div class="flex py-5 justify-center gap-3">
+            <a
+              href="./assets/jerry's-resume.docx"
+              download="jerry's resume"
+              class="p-2 rounded bg-black text-white transition-all hover:bg-neutral-600 font-medium text-md"
+              >Download My Resume</a
+            >
+            <a
+              href="https://github.com/jerex23"
+              target="_blank"
+              class="p-2 rounded bg-black text-white hover:bg-neutral-600 font-medium text-md"
+              >My Github</a
+            >
+          </div>
         </div>
       </section>
       <section class="h-96">
         <h2>Experiences</h2>
-        <div></div>
+        <div class="flex gap-1 flex-wrap justify-center">
+          <div class="basis-96 grow-0">
+            <h3>Google Developer Student Club</h3>
+            <h3>Mobile App Developer</h3>
+            , Programmed the community mobile apps by integrating latest
+            technologies that can effectively carry out operations such as
+            Storing of User’s Data, communicating with user to inform him about
+            the events coming up, and efficiently handling real- world data.
+            <h4>Oct 2022 - Present. Ilishan-Remo, Ogun State, Nigeria.</h4>
+          </div>
+          <div class="basis-96 grow-0">
+            <h3>Google Developer Student Club</h3>
+            <h3>Cyber Security Engineer</h3>
+            Participated in the development of the community security and
+            protection of users data by fixing loopholes and errors in the
+            community security database. Conducted red team penetration attacks
+            to try and find loopholes or bugs in the community system, thereby
+            enhancing the security and safety of the system .
+            <h4>Oct 2022 - Present. Ilishan-Remo, Ogun State, Nigeria.</h4>
+          </div>
+
+          <div class="basis-96 grow-0">
+            <h3>Enactus Babcock University</h3>
+            <h3>Mobile App Developer</h3>
+
+            Operated the mobile and web apps of the organization, Ensuring that
+            all programs are working seamlessly and efficiently and making
+            changes in order to suite the organization rules and guidelines.
+            Assisted in the decision and planning stages of the organization in
+            relation to participation in competitions and projects creation and
+            execution.
+            <h4>Oct 2022 - Present. Ilishan-Remo, Ogun State, Nigeria.</h4>
+          </div>
+          <div class="basis-96 grow-0">
+            <h3>Shadow Developers Babcock University</h3>
+            <h3>Software Tester</h3>
+
+            Evaluated Max Stud. a timetable generator that generates a
+            personalized timetable for each user based on their Schedule inputs
+            and then creates the timetable based on the free time available in
+            the schedule , in order to ensure that no errors is found in the
+            system and to make sure the program caries out its operation
+            efficiently
+            <h4>Oct 2022 - Present. Ilishan-Remo, Ogun State, Nigeria.</h4>
+          </div>
+          <div class="basis-96 grow-0">
+            <h3>Leadership Experience @ Litguide Inc</h3>
+            <h3>Product Manager</h3>
+            Spearheaded the creation of IREAD , an online book recommendation
+            system that utilizes collaborative filtering to recommend books to
+            its users. Monitored the development process from the planning stage
+            all to the implementation stage, ensuring that the program was
+            always in line with the client requirements.
+            <h4>Sep 2023 - Dec 2023. Ilishan-Remo, Ogun State, Nigeria.</h4>
+          </div>
+        </div>
       </section>
     </main>
   </body>
