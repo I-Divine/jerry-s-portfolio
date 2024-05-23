@@ -667,24 +667,12 @@ video {
   inset-inline-end: 0.25rem;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.right-full {
-  right: 100%;
-}
-
-.left-full {
-  left: 100%;
-}
-
-.left-1 {
-  left: 0.25rem;
-}
-
 .right-1 {
   right: 0.25rem;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .top-1 {
@@ -745,6 +733,21 @@ video {
 
 .clear-none {
   clear: none;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .mb-6 {
@@ -854,17 +857,9 @@ video {
   display: none;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -883,28 +878,12 @@ video {
   width: 100%;
 }
 
-.w-\[calc\(80vw-\)\] {
-  width: calc(80vw - );
-}
-
-.w-\[80vw\] {
-  width: 80vw;
-}
-
-.max-w-1 {
-  max-width: 0.25rem;
-}
-
-.max-w-96 {
-  max-width: 24rem;
-}
-
 .max-w-10 {
   max-width: 2.5rem;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
+.max-w-96 {
+  max-width: 24rem;
 }
 
 .flex-shrink {
@@ -927,16 +906,8 @@ video {
   flex-grow: 0;
 }
 
-.basis-40 {
-  flex-basis: 10rem;
-}
-
 .basis-96 {
   flex-basis: 24rem;
-}
-
-.basis-64 {
-  flex-basis: 16rem;
 }
 
 .table-auto {
@@ -1118,6 +1089,11 @@ video {
   scroll-snap-stop: always;
 }
 
+.scroll-py-2 {
+  scroll-padding-top: 0.5rem;
+  scroll-padding-bottom: 0.5rem;
+}
+
 .list-inside {
   list-style-position: inside;
 }
@@ -1255,10 +1231,6 @@ video {
 
 .grid-flow-col-dense {
   grid-auto-flow: column dense;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1449,20 +1421,12 @@ video {
   gap: 2.5rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .gap-3 {
   gap: 0.75rem;
 }
 
-.gap-1 {
-  gap: 0.25rem;
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1923,14 +1887,14 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -2043,20 +2007,20 @@ video {
      object-fit: scale-down;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-24 {
   padding: 6rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
+.p-4 {
+  padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-10 {
@@ -2143,6 +2107,11 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -2233,6 +2202,11 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2550,6 +2524,18 @@ video {
   transition-duration: 150ms;
 }
 
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.duration-100 {
+  transition-duration: 100ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2620,6 +2606,11 @@ video {
   vite: html;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 4rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2656,18 +2647,13 @@ video {
   }
 }
 
-.\*\:basis-96 > * {
-  flex-basis: 24rem;
+.\*\:scroll-smooth > * {
+  scroll-behavior: smooth;
 }
 
-.hover\:bg-cyan-400:hover {
+.hover\:bg-black:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(34 211 238 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-neutral-800:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-neutral-600:hover {
@@ -2702,6 +2688,11 @@ video {
   text-align: center;
 }
 
+.group:hover .group-hover\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .peer:checked ~ .peer-checked\:block {
   display: block;
 }
@@ -2721,10 +2712,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:flex {
-    display: flex;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
