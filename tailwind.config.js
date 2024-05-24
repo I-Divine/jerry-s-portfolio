@@ -3,6 +3,11 @@ const colors = require("tailwindcss/colors");
 export default {
   content: ["./**/*.{html,js}"],
   theme: {
+    fontFamily: {
+      primary: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+      secondary: ["Montserrat", "ui-sans-serif", "system-ui", "sans-serif"],
+      header: ['"Roboto Slab"', "ui-serif", "system-ui", "serif"],
+    },
     colors: {
       ...colors,
       night: "#151319",

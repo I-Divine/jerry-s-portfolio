@@ -899,10 +899,6 @@ video {
   width: 100%;
 }
 
-.min-w-32 {
-  min-width: 8rem;
-}
-
 .max-w-10 {
   max-width: 2.5rem;
 }
@@ -2152,6 +2148,18 @@ video {
 
 .align-super {
   vertical-align: super;
+}
+
+.font-header {
+  font-family: "Roboto Slab", ui-serif, system-ui, serif;
+}
+
+.font-secondary {
+  font-family: Montserrat, ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-primary {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
 }
 
 .text-3xl {
